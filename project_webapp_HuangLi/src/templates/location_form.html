@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Closest MBTA Location</title>
+</head>
+<body>
+<h1>Closest MBTA Location</h1>
+<form method="POST" name="near">
+    {% if error %}
+    <p style='color:red'>There is no station within 1 mile radius</p>
+    {% endif %}
+    <p>
+        Please enter your location:
+    </p>
+    <p>
+        <input type="text" name='location'>
+    </p>
+    <p>
+        <input type="submit" value="Magic Happens">
+    </p>
+</form>
+</body>
+</html>
